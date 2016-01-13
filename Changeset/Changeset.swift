@@ -3,6 +3,8 @@
 //  Copyright (c) 2015 Joachim Bondo. All rights reserved.
 //
 
+import Foundation
+
 /// Defines an atomic edit.
 /// - seealso: Note on `EditOperation`.
 public struct Edit<T: Equatable> {
@@ -196,4 +198,29 @@ public func ==<T: Equatable>(lhs: Edit<T>, rhs: Edit<T>) -> Bool {
 	default:
 		return false
 	}
+}
+
+extension Changeset {
+    internal func batchChangeArrays() -> (insertions: [NSIndexPath], deletions: [NSIndexPath], updates: [NSIndexPath]) {
+        var insertions = [NSIndexPath]()
+        var deletions = [NSIndexPath]()
+        var updates = [NSIndexPath]()
+        
+        for edit in self.edits {
+            let destinationIndexPath = NSIndexPath(forRow: edit.destination, inSection: 0)
+            switch edit.operation {
+            case .Deletion:
+                deletions.append(destinationIndexPath)
+            case .Insertion:
+                insertions.append(destinationIndexPath)
+            case .Move(let origin):
+                let originIndexPath = NSIndexPath(forRow: origin, inSection: 0)
+                deletions.append(originIndexPath)
+                insertions.append(destinationIndexPath)
+            case .Substitution:
+                updates.append(destinationIndexPath)
+            }
+        }
+        return (insertions, deletions, updates)
+    }
 }

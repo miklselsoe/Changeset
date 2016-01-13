@@ -11,6 +11,10 @@
 		29828DD91C2A899E0056284E /* ChangesetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29828DD81C2A899E0056284E /* ChangesetTests.swift */; };
 		29828DE41C2A8BD40056284E /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29828DE31C2A8BD40056284E /* Changeset.swift */; };
 		29828DE51C2A8BD40056284E /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29828DE31C2A8BD40056284E /* Changeset.swift */; };
+		76DB9F241C46E131005745E6 /* UITableView+Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DB9F231C46E131005745E6 /* UITableView+Changeset.swift */; };
+		76DB9F251C46E131005745E6 /* UITableView+Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DB9F231C46E131005745E6 /* UITableView+Changeset.swift */; };
+		76DB9F291C46E776005745E6 /* UICollectionView+Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DB9F281C46E776005745E6 /* UICollectionView+Changeset.swift */; };
+		76DB9F2A1C46E776005745E6 /* UICollectionView+Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DB9F281C46E776005745E6 /* UICollectionView+Changeset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,8 @@
 		29828DD81C2A899E0056284E /* ChangesetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesetTests.swift; sourceTree = "<group>"; };
 		29828DDA1C2A899E0056284E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29828DE31C2A8BD40056284E /* Changeset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Changeset.swift; sourceTree = "<group>"; usesTabs = 1; };
+		76DB9F231C46E131005745E6 /* UITableView+Changeset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Changeset.swift"; sourceTree = "<group>"; };
+		76DB9F281C46E776005745E6 /* UICollectionView+Changeset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Changeset.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				29828DE31C2A8BD40056284E /* Changeset.swift */,
+				76DB9F231C46E131005745E6 /* UITableView+Changeset.swift */,
+				76DB9F281C46E776005745E6 /* UICollectionView+Changeset.swift */,
 				29828DCE1C2A899D0056284E /* Info.plist */,
 			);
 			path = Changeset;
@@ -197,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DB9F241C46E131005745E6 /* UITableView+Changeset.swift in Sources */,
+				76DB9F291C46E776005745E6 /* UICollectionView+Changeset.swift in Sources */,
 				29828DE41C2A8BD40056284E /* Changeset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29828DE51C2A8BD40056284E /* Changeset.swift in Sources */,
+				76DB9F251C46E131005745E6 /* UITableView+Changeset.swift in Sources */,
+				76DB9F2A1C46E776005745E6 /* UICollectionView+Changeset.swift in Sources */,
 				29828DD91C2A899E0056284E /* ChangesetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
